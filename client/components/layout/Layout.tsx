@@ -1,8 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, ShieldCheck, Home, Users, Wrench } from "lucide-react";
 import { useEffect, useState } from "react";
+import { clearSession, getSession } from "@/lib/auth";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
