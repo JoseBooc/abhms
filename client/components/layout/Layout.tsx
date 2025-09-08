@@ -68,8 +68,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </Button>
             {session ? (
               <>
-                <span className="text-xs text-muted-foreground mr-1">{session.role}</span>
-                <Button onClick={() => { clearSession(); setSessionState(null); navigate("/"); }}>Logout</Button>
+                <span className="text-xs text-muted-foreground mr-1">
+                  {session.role}
+                </span>
+                <Button
+                  onClick={() => {
+                    clearSession();
+                    setSessionState(null);
+                    navigate("/");
+                  }}
+                >
+                  Logout
+                </Button>
               </>
             ) : (
               <>
@@ -110,7 +120,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <a href="#booking">View Rooms</a>
                 </Button>
                 {session ? (
-                  <Button className="flex-1" onClick={() => { clearSession(); setSessionState(null); navigate("/"); }}>Logout</Button>
+                  <Button
+                    className="flex-1"
+                    onClick={() => {
+                      clearSession();
+                      setSessionState(null);
+                      navigate("/");
+                    }}
+                  >
+                    Logout
+                  </Button>
                 ) : (
                   <>
                     <Button variant="outline" asChild className="flex-1">
