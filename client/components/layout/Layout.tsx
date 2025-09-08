@@ -8,7 +8,9 @@ import { clearSession, getSession } from "@/lib/auth";
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [session, setSessionState] = useState(getSession());
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
@@ -18,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
+    setSessionState(getSession());
     // close mobile menu on route change
     setOpen(false);
   }, [pathname]);
