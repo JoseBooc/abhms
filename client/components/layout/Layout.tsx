@@ -109,7 +109,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Button variant="ghost" asChild className="flex-1">
                   <a href="#booking">View Rooms</a>
                 </Button>
-                <Button className="flex-1">Get Started</Button>
+                {session ? (
+                  <Button className="flex-1" onClick={() => { clearSession(); setSessionState(null); navigate("/"); }}>Logout</Button>
+                ) : (
+                  <>
+                    <Button variant="outline" asChild className="flex-1">
+                      <Link to="/login">Login</Link>
+                    </Button>
+                    <Button asChild className="flex-1">
+                      <Link to="/admin">Get Started</Link>
+                    </Button>
+                  </>
+                )}
               </div>
             </div>
           </div>
