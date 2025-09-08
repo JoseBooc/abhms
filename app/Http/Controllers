@@ -1,0 +1,17 @@
+The directory /abhms/abhms/app/Http/Controllers is intended to contain controller classes. Since you have not specified any particular controller to create, I will provide the contents for a default controller file.
+
+Here is the content for a new file named `ExampleController.php` in the `/abhms/abhms/app/Http/Controllers` directory:
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class ExampleController extends Controller
+{
+    public function index()
+    {
+        return response()->json(['message' => 'Hello, World!']);
+    }
+}
