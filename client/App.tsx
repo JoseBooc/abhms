@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import Layout from "@/components/layout/Layout";
 import AdminDashboard from "@/pages/admin/Dashboard";
 import Rooms from "@/pages/admin/Rooms";
+import Login from "@/pages/auth/Login";
 
 const queryClient = new QueryClient();
 
