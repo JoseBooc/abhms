@@ -62,7 +62,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Button variant="ghost" asChild>
               <a href="#booking">View Rooms</a>
             </Button>
-            <Button>Get Started</Button>
+            <Button asChild>
+              <Link to="/admin">Get Started</Link>
+            </Button>
           </div>
           <button
             className="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-md border"
