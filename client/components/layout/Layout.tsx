@@ -34,13 +34,29 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="h-8 w-8 rounded-md bg-primary text-primary-foreground grid place-items-center shadow-sm">
               <ShieldCheck className="h-5 w-5" />
             </div>
-            <span className="font-extrabold tracking-tight text-lg">Areja BHMS</span>
+            <span className="font-extrabold tracking-tight text-lg">
+              Areja BHMS
+            </span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#features" className="hover:text-primary transition-colors">Features</a>
-            <a href="#roles" className="hover:text-primary transition-colors">Roles</a>
-            <a href="#modules" className="hover:text-primary transition-colors">Modules</a>
-            <a href="#analytics" className="hover:text-primary transition-colors">Analytics</a>
+            <a
+              href="#features"
+              className="hover:text-primary transition-colors"
+            >
+              Features
+            </a>
+            <a href="#roles" className="hover:text-primary transition-colors">
+              Roles
+            </a>
+            <a href="#modules" className="hover:text-primary transition-colors">
+              Modules
+            </a>
+            <a
+              href="#analytics"
+              className="hover:text-primary transition-colors"
+            >
+              Analytics
+            </a>
           </nav>
           <div className="hidden md:flex items-center gap-2">
             <Button variant="ghost" asChild>
@@ -59,10 +75,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {open && (
           <div className="md:hidden border-t bg-background/80 backdrop-blur">
             <div className="container py-3 grid gap-2">
-              <a href="#features" className="py-2">Features</a>
-              <a href="#roles" className="py-2">Roles</a>
-              <a href="#modules" className="py-2">Modules</a>
-              <a href="#analytics" className="py-2">Analytics</a>
+              <a href="#features" className="py-2">
+                Features
+              </a>
+              <a href="#roles" className="py-2">
+                Roles
+              </a>
+              <a href="#modules" className="py-2">
+                Modules
+              </a>
+              <a href="#analytics" className="py-2">
+                Analytics
+              </a>
               <div className="flex gap-2 pt-2">
                 <Button variant="ghost" asChild className="flex-1">
                   <a href="#booking">View Rooms</a>
@@ -85,26 +109,51 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
               <span className="font-bold">Areja Boarding House</span>
             </div>
-            <p className="text-sm text-muted-foreground">A complete platform to manage rooms, leases, billing, and maintenance for your boarding house.</p>
+            <p className="text-sm text-muted-foreground">
+              A complete platform to manage rooms, leases, billing, and
+              maintenance for your boarding house.
+            </p>
           </div>
           <div>
             <h4 className="font-semibold mb-3">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a className="hover:text-primary" href="#features">Features</a></li>
-              <li><a className="hover:text-primary" href="#roles">Roles & Permissions</a></li>
-              <li><a className="hover:text-primary" href="#modules">Modules</a></li>
-              <li><a className="hover:text-primary" href="#booking">Bookings</a></li>
+              <li>
+                <a className="hover:text-primary" href="#features">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-primary" href="#roles">
+                  Roles & Permissions
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-primary" href="#modules">
+                  Modules
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-primary" href="#booking">
+                  Bookings
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-3">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2"><Users className="h-4 w-4" /> Admin: admin@areja-bhms.local</li>
-              <li className="flex items-center gap-2"><Wrench className="h-4 w-4" /> Support: support@areja-bhms.local</li>
+              <li className="flex items-center gap-2">
+                <Users className="h-4 w-4" /> Admin: admin@areja-bhms.local
+              </li>
+              <li className="flex items-center gap-2">
+                <Wrench className="h-4 w-4" /> Support: support@areja-bhms.local
+              </li>
             </ul>
           </div>
         </div>
-        <div className="border-t py-4 text-center text-xs text-muted-foreground">© {new Date().getFullYear()} Areja BHMS. All rights reserved.</div>
+        <div className="border-t py-4 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Areja BHMS. All rights reserved.
+        </div>
       </footer>
     </div>
   );
