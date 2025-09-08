@@ -66,9 +66,9 @@ export default function Index() {
               </Button>
             </div>
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <StatCard icon={Building2} label="Total Rooms" value="100" />
-              <StatCard icon={Users} label="Active Tenants" value="72" />
-              <StatCard icon={DoorOpen} label="Occupancy" value="72%" />
+              <StatCard icon={Building2} label="Total Rooms" value="8" />
+              <StatCard icon={Users} label="Active Tenants" value="6" />
+              <StatCard icon={DoorOpen} label="Occupancy" value="75%" />
               <StatCard
                 icon={CreditCard}
                 label="Monthly Revenue"
