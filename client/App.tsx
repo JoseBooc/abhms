@@ -9,6 +9,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Layout from "@/components/layout/Layout";
+import AdminDashboard from "@/pages/admin/Dashboard";
+import Rooms from "@/pages/admin/Rooms";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,22 @@ const App = () => (
             element={
               <Layout>
                 <Index />
+              </Layout>
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <Layout>
+                <AdminDashboard />
+              </Layout>
+            }
+          />
+          <Route
+            path="/admin/rooms"
+            element={
+              <Layout>
+                <Rooms />
               </Layout>
             }
           />
