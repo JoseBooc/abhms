@@ -1,0 +1,17 @@
+The directory "/abhms/abhms/database/seeders" is intended to contain seeder classes for populating the database with initial data. Since you have not specified any particular seeder class to create, I will provide the contents for a typical seeder file.
+
+Here is the content for a new seeder file, for example, `DatabaseSeeder.php`:
+
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    public function run()
+    {
+        // Call other seeders here
+    }
+}
